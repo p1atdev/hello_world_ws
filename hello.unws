@@ -1,0 +1,100 @@
+push 0
+push 72
+store
+push 1
+push 101
+store
+push 2
+push 108
+store
+push 3
+push 108
+store
+push 4
+push 111
+store
+push 5
+push 44 
+store
+push 6
+push 32
+store
+push 7
+push 87
+store
+push 8
+push 105
+store
+push 9
+push 116
+store
+push 10
+push 101
+store
+push 11
+push 115
+store
+push 12 
+push 112
+store
+push 13 
+push 97
+store
+push 14
+push 99
+store
+push 15
+push 101
+store
+push 16
+push 33
+store
+push 17
+push 0
+store
+push 0
+call " \t\t\t \t\t\t \t\t\t  \t  \t\t \t  \t \t\t\t \t   \t\t  \t \t"
+call " \t\t \t\t\t  \t\t  \t \t \t\t\t \t\t\t \t\t \t\t   \t\t \t  \t \t\t \t\t\t  \t\t  \t \t"
+end
+mark " \t\t    \t \t\t  \t   \t\t  \t  "
+add
+return
+mark " \t\t\t \t\t\t \t\t\t  \t  \t\t \t  \t \t\t\t \t   \t\t  \t \t"
+duplicate
+retrieve
+duplicate
+ifzero " \t\t\t \t\t\t \t\t\t  \t  \t\t \t  \t \t\t\t \t   \t\t  \t \t \t \t\t\t\t\t \t\t  \t \t \t\t \t\t\t  \t\t  \t  "
+putchar
+push 1
+add
+jump " \t\t\t \t\t\t \t\t\t  \t  \t\t \t  \t \t\t\t \t   \t\t  \t \t"
+mark " \t\t\t \t\t\t \t\t\t  \t  \t\t \t  \t \t\t\t \t   \t\t  \t \t \t \t\t\t\t\t \t\t  \t \t \t\t \t\t\t  \t\t  \t  "
+discard
+discard
+return
+mark " \t\t\t  \t  \t\t  \t \t \t\t    \t \t\t  \t  "
+duplicate
+duplicate
+getchar
+retrieve
+duplicate
+push 10
+subtract
+ifzero " \t\t\t  \t  \t\t  \t \t \t\t    \t \t\t  \t   \t \t\t\t\t\t \t\t  \t \t \t\t \t\t\t  \t\t  \t  "
+discard
+push 1
+add
+jump " \t\t\t  \t  \t\t  \t \t \t\t    \t \t\t  \t  "
+mark " \t\t\t  \t  \t\t  \t \t \t\t    \t \t\t  \t   \t \t\t\t\t\t \t\t  \t \t \t\t \t\t\t  \t\t  \t  "
+discard
+push 1
+add
+push 0
+store
+return
+mark " \t\t \t\t\t  \t\t  \t \t \t\t\t \t\t\t \t\t \t\t   \t\t \t  \t \t\t \t\t\t  \t\t  \t \t"
+push 10
+push 13
+putchar
+putchar
+return

@@ -1,0 +1,14 @@
+{
+    "name": "hello_world",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "wspace ./hello.ws",
+        "build": "unws2ws ./hello.unws > ./output.ws",
+        "dev": "yarn build && wspace ./output.ws"
+    },
+    "dependencies": {
+        "@susisu/whitespace-js": "^0.0.8"
+    }
+}
